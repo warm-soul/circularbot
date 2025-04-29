@@ -176,8 +176,9 @@ def generate_response(query: str, context: str, system_prompt: str):
     return final_response
 
 # Streamlit UI
-st.title("પરિપત્રોનું સંકલન સહાયક")
-st.write("પરિપત્રો વિશે કોઈપણ પ્રશ્ન પૂછો")
+st.title("AI-Powered Citizen Assistance and
+Information System")
+st.write("Ask any questions about Circulars")
 
 # Initialize chat history
 if 'messages' not in st.session_state:
