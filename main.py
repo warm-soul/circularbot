@@ -6,10 +6,7 @@ from deep_translator import GoogleTranslator
 import time
 import math
 
-# Debug mode
-DEBUG = st.sidebar.checkbox("Debug Mode", False)
 
-# System prompt definition
 system_prompt = """You are an authoritative expert on the Circulars released by AMC.
 Your responses should be:
 1. Comprehensive and detailed
@@ -213,12 +210,24 @@ if prompt := st.chat_input("તમે શું જાણવા માંગો 
 
 # Sidebar with additional information
 with st.sidebar:
-    st.header("વિશે")
+    st.header("About")
     st.write("""
-    આ ચેટબોટ અમદાવાદ મ્યુનિસિપલ કોર્પોરેશન દ્વારા જારી કરાયેલા પરિપત્રો વિશે માહિતી પ્રદાન કરે છે.
+    This chatbot provides information and updates about of the government as well as the latest news.
     """)
     st.write("""
-    ભાષા સુવિધાઓ:
-    - તમે ગુજરાતી અથવા અંગ્રેજીમાં પ્રશ્નો પૂછી શકો છો
-    - તમને જવાબ ગુજરાતીમાં મળશે
+   
+    Language Support:
+        You can ask questions in Gujarati or English.
+        You will receive answers in Gujarati.
+    """)
+
+with st.sidebar:
+    st.header("વિશે")
+    st.write("""
+    આ ચેટબોટ સરકાર વિશેની માહિતી અને અપડેટ્સ તેમજ તાજા સમાચાર પ્રદાન કરે છે.
+    """)
+    st.write("""
+     ભાષા સુવિધાઓ:
+          તમે ગુજરાતી અથવા અંગ્રેજીમાં પ્રશ્નો પૂછી શકો છો
+          તમને જવાબ ગુજરાતીમાં મળશે
     """)
