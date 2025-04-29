@@ -218,7 +218,6 @@ with st.sidebar:
    
     Language Support:
         You can ask questions in Gujarati or English.
-        You will receive answers in Gujarati.
     """)
 
 with st.sidebar:
@@ -229,5 +228,4 @@ with st.sidebar:
     st.write("""
      ભાષા સુવિધાઓ:
           તમે ગુજરાતી અથવા અંગ્રેજીમાં પ્રશ્નો પૂછી શકો છો
-          તમને જવાબ ગુજરાતીમાં મળશે
     """)
